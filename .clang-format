@@ -1,0 +1,44 @@
+---
+# BasedOnStyle:  LLVM
+AlignEscapedNewlinesLeft: false
+AlignTrailingComments: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowShortBlocksOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AlwaysBreakBeforeMultilineStrings: true
+BinPackParameters: true
+BreakBeforeBinaryOperators: false
+BreakBeforeBraces: Linux
+BreakBeforeTernaryOperators: true
+ColumnLimit:     79
+ContinuationIndentWidth: 4
+DerivePointerAlignment: false
+DisableFormat:   false
+ExperimentalAutoDetectBinPacking: false
+IndentCaseLabels: false
+IndentFunctionDeclarationAfterType: false
+IndentWidth:     3
+IndentWrappedFunctionNames: false
+KeepEmptyLinesAtTheStartOfBlocks: false
+Language:        Cpp
+MaxEmptyLinesToKeep: 1
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+PenaltyBreakString: 1000
+PenaltyBreakFirstLessLess: 120
+PenaltyExcessCharacter: 1000000
+PenaltyReturnTypeOnItsOwnLine: 60
+PointerAlignment: Right
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 1
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+Standard:        Auto
+TabWidth:        3
+UseTab:          Never
+...
+
