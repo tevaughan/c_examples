@@ -2,13 +2,14 @@
 
 int main()
 {
-   /* No Comment means that printf returns the character and wastes compiling
-    * time*/
+   /* No comment means that printf returns the character and gives warning at 
+    *  compiling time*/
+   
    printf("backslash-a '\a'\n"); /* control g */
    printf("backslash-b '\b'\n"); /* goes back 1 space and replaces character */
    printf("backslash-c '\c'\n"); 
    printf("backslash-d '\d'\n");
-   printf("backslash-e '\e'\n"); /* escape key*/
+   printf("backslash-e '\e'\n"); /* escape key */
    printf("backslash-f '\f'\n"); 
    printf("backslash-g '\g'\n");
    printf("backslash-h '\h'\n");
@@ -62,7 +63,7 @@ int main()
    printf("backslash-X '\X'\n");
    printf("backslash-Y '\Y'\n");
    printf("backslash-Z '\Z'\n");
-   printf("backslash-1 '\1'\n"); /* control A */
+   printf("backslash-1 '\1'\n"); /* control a */
    printf("backslash-2 '\2'\n"); /* control b */
    printf("backslash-3 '\3'\n"); /* control c */
    printf("backslash-4 '\4'\n"); /* control d */
