@@ -6,17 +6,17 @@
 # PROGS is the variable that stores the name of each program to be built. In
 # most (if not all) cases, the corresponding source code will be in a file with
 # the same name as the executable program but with '.c' appended.
-PROGS = ex-1-1 ex-1-2
+PROGS = ex-1-1 ex-1-2 ex-1-3
+
+# OUTPUT contains a list of output files to be generated. Each of these files
+# collects the output of one of the programs.
+OUTPUT = $(PROGS:=.out)
 
 # CFLAGS is used automatically by make whenever it converts any source file
 # 'somefile.c' into a binary executable file 'somefile' by calling the C
 # compiler. The make program passes to the compiler each of the arguments in
 # this variable.
 CFLAGS = -Wall -std=c89 -pedantic
-
-# OUTPUT contains a list of output files to be generated. Each of these files
-# collects the output of one of the programs.
-OUTPUT = ex-1-2.out
 
 # This is a pattern rule. A pattern rule is only a potential rule. It becomes
 # actual only when some other, non-pattern rule has a dependency that
