@@ -1,22 +1,22 @@
 
-/* Print Celsius to Fahrenheit table */
-
 #include <stdio.h>
+
+/* Print Celsius-to-Fahrenheit table. */
+
 int main()
 {
-   int lower, upper, step;
    float cel, fahr;
+   int lower, upper, step;
    
-   lower = 0; /* lower limit of table */
-   upper = 300; /* upper limit of table */
-   step = 20; /* increment for temperature */
-   
-   cel = lower;
+   lower = -20; /* lower limit of table */
+   upper = 150; /* upper limit of table */
+   step  =  10; /* increment for degrees Celsius */
 
+   printf("Celsius  Fahrenheit\n"); /* Print heading. */
+   cel = lower;
    while (cel <= upper) {
-      fahr = (9.0/5.0) * cel + 32;
-      printf("Celsius\tFahrenheit\n\n"); /* prints heading */
-      printf("%3.0f %6.0f\n", cel, fahr); /* prints table */
+      fahr = (9.0/5.0)*cel + 32.0;
+      printf("    %3.0f      %6.1f\n", cel, fahr); /* Print line in table. */
       cel = cel + step; 
    }
    

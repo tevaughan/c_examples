@@ -6,7 +6,7 @@
 # PROGS is the variable that stores the name of each program to be built. In
 # most (if not all) cases, the corresponding source code will be in a file with
 # the same name as the executable program but with '.c' appended.
-PROGS = ex-1-1 ex-1-2 ex-1-3
+PROGS = ex-1-1 ex-1-2 ex-1-3 ex-1-4
 
 # OUTPUT contains a list of output files to be generated. Each of these files
 # collects the output of one of the programs.
