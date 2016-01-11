@@ -1,2 +1,6 @@
-# c_examples
-Example solutions for exercises in K&amp;R C book (1988)
+
+# C Examples
+
+Example solutions to exercises in _The C Programming Language_ (Kernighan and
+Ritchie, 1988).
+
