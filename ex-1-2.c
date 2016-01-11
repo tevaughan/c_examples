@@ -108,8 +108,8 @@ int main()
    printf("backslash-} '\}'\n");
    printf("backslash-; '\;'\n");
    printf("backslash-: '\:'\n");
-   printf("backslash-' '\''\n");
-   printf("backslash-double-quote '\"'\n");
+   printf("backslash-' '\''\n");            /* literal single-quote */
+   printf("backslash-double-quote '\"'\n"); /* literal double-quote */
    printf("backslash-, '\,'\n");
    printf("backslash-. '\.'\n");
    printf("backslash-< '\<'\n");
