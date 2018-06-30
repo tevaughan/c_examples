@@ -6,7 +6,7 @@
 # PROGS is the variable that stores the name of each program to be built. In
 # most (if not all) cases, the corresponding source code will be in a file with
 # the same name as the executable program but with '.c' appended.
-PROGS = ex-1-1 ex-1-2 ex-1-3 ex-1-4 ex-1-5
+PROGS = ex-1-01 ex-1-02 ex-1-03 ex-1-04 ex-1-05 ex-1-13
 
 # OUTPUT contains a list of output files to be generated. Each of these files
 # collects the output of one of the programs.
@@ -42,10 +42,14 @@ CFLAGS = -Wall -std=c89 -pedantic
 # programs should be built and that their output should be generated.
 all : $(PROGS) $(OUTPUT)
 
-# Treat ex-1-2 specially because it produces a bunch of warnings that need to
+# Treat ex-1-02 specially because it produces a bunch of warnings that need to
 # be redirected to a log file.
-ex-1-2 : ex-1-2.c
+ex-1-02 : ex-1-02.c
 	gcc $(CFLAGS) -o $@ $< 2> ex-1-2.buildlog
+
+# Treat ex-1-13 specially because it needs standard input.
+ex-1-13.out : ex-1-13
+	man ls | ./$< > $@
 
 # This rule is what runs when one types 'make clean' from the command line. It
 # removes each executable program and any corresponding output file.
